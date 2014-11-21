@@ -25,5 +25,5 @@ def send(from_address, to_address, subject, text, attachment=None):
         msg.attach(part)
 
     s = smtplib.SMTP('localhost')
-    s.sendmail(from_address, [to_address], msg.as_string())
+    s.sendmail(from_address, to_address.split(', '), msg.as_string())
     s.quit()

@@ -4,7 +4,7 @@ import time
 import send_email
 
 FROM_ADDRESS = 'titanicping@fire.caltech.edu'
-TO_ADDRESSES = 'feldmando+m@gmail.com, feldmando+titanicping@gmail.com'
+TO_ADDRESSES = open('notify_these_addresses.txt').read().strip()
 # Do not send an email if we sent an email within the last DELAY_TIME seconds.
 DELAY_TIME = 172800
 last_email_time_file = 'last_email_time.txt'

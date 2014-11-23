@@ -1,0 +1,3 @@
+{} pings failed between {} and {}
+
+https://github.com/AGFeldman/ping_titanic
